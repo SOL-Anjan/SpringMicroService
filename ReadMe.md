@@ -28,7 +28,7 @@ access to multiple managed services.
 
 
 
-### Realworld problem statement 1
+### Realworld problem solution with Sealed interface and Json Polymorphism with Jackson
 Follow payment module code example 
 ![alt text](image-2.png)
 
@@ -38,4 +38,7 @@ Follow payment module code example
 
 ![alt text](image-5.png)
 
+
+### Realworld problem solution with GraalVM Support
+Real-World Example: An application that took 3.6 seconds to start on a standard JVM was able to start in under 100 milliseconds once compiled using GraalVM Native Image. This makes Java a much more viable and competitive option for serverless functions.
 
