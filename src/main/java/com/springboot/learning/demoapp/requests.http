@@ -1,0 +1,62 @@
+### Get all posts (a simple GET request)
+GET http://localhost:8080/hello
+
+### Process a Credit Card Payment
+POST http://localhost:8080/api/payments/process
+Content-Type: application/json
+
+{
+  "type": "CreditCard",
+  "cardNumber": "1234-5678-9012-3456",
+  "expiryDate": "12/27",
+  "cvv": "123"
+}
+
+### Process a PayPal Payment
+POST http://localhost:8080/api/payments/process
+Content-Type: application/json
+
+{
+  "type": "PayPal",
+  "emailAddress": "user@example.com"
+}
+
+### Create User 1
+POST http://localhost:8080/users
+Content-Type: application/json
+
+{
+  "name": "Alice",
+  "email": "alice@example.com"
+}
+
+### Create User 2
+POST http://localhost:8080/users
+Content-Type: application/json
+
+{
+  "name": "Bob",
+  "email": "bob@example.com"
+}
+
+### Create User 3
+POST http://localhost:8080/users
+Content-Type: application/json
+
+{
+  "name": "Charlie",
+  "email": "charlie@example.com"
+}
+
+### Create User 4
+POST http://localhost:8080/users
+Content-Type: application/json
+
+{
+  "name": "David",
+  "email": "david@example.com"
+}
+
+
+### Get Users
+GET http://localhost:8080/users

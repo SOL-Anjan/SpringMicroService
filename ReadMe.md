@@ -57,3 +57,28 @@ https://docs.google.com/spreadsheets/d/1ARbP4d-0yCieaHnQ81dHSg9ChK_L_93s5eT7Ufkw
 3. Event Sourcing
 ![alt text](image-9.png)
 
+
+### Reactive Programming 
+![alt text](image-10.png)
+
+#### Web Flux and Project Reactor
+![alt text](image-11.png)
+
+#### Implementing the Repository Layer & Model[Table]: 
+1. In our `reactive user management service`, establishing a well-structured
+`repository layer` is essential. This layer will liaise between our applica‐
+tion’s business logic and the database, handling all data interactions.
+
+2. We need to define our `database schema` and initial data in a
+`schema.sql` file located in our resources directory.
+
+3. However, in the reactive world, we use `ReactiveCrudRepository` or
+`R2dbcRepository`. These interfaces are designed to work with reactive
+types, such as `Mono` and `Flux`.
+
+#### Implementing the Reactive REST Controller 
+
+1. In a Spring Boot application, `controllers` are the `gatekeepers of our API`. It
+navigates incoming requests to the appropriate services or actions. 
+
+2. 
