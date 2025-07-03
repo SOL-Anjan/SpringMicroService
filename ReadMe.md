@@ -42,3 +42,18 @@ Follow payment module code example
 ### Realworld problem solution with GraalVM Support
 Real-World Example: An application that took 3.6 seconds to start on a standard JVM was able to start in under 100 milliseconds once compiled using GraalVM Native Image. This makes Java a much more viable and competitive option for serverless functions.
 
+### Microservice genric design patterns
+
+![alt text](image-6.png)
+
+https://docs.google.com/spreadsheets/d/1ARbP4d-0yCieaHnQ81dHSg9ChK_L_93s5eT7Ufkwg1c/edit?usp=sharing
+
+
+### Microservice Patterns
+1. Domain Driven Design (DDD)
+![alt text](image-7.png)
+2. Command Query Responsibility Segregation (CQRS)
+![alt text](image-8.png)
+3. Event Sourcing
+![alt text](image-9.png)
+
