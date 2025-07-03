@@ -49,7 +49,15 @@ public class UserController {
     @PostMapping
     public Mono<ResponseEntity<User>> createUser(@RequestBody User user) {
         return userRepository.findByEmail(user.email())
-                .flatMap(existingUser -> Mono.error(new EmailUniquenessException("Email already exists!")))
+                .flatMap(existingUser -> 
+                    Mono.error(new EmailUniquenessException("Email already exists!"))
+                )
+                .switchIfEmpty(userRepository.save(user)  // Only save if no existing user
+                    .map(savedUser -> {
+                        System.out.println("New user created: " + savedUser);
+                        return ResponseEntity.ok(savedUser);
+                    })
+                )
                 .then(userRepository.save(user)) // Save the new user if the email doesn't exist
                 .map(ResponseEntity::ok) // Map the saved user to a ResponseEntity
                 .doOnNext(savedUser -> System.out.println("New user created: " + savedUser)) // Logging or further action

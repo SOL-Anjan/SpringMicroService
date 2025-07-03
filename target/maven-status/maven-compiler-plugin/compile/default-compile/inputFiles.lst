@@ -2,6 +2,9 @@ D:\vscode\demoapp\src\main\java\com\springboot\learning\demoapp\controller\UserC
 D:\vscode\demoapp\src\main\java\com\springboot\learning\demoapp\DemoappApplication.java
 D:\vscode\demoapp\src\main\java\com\springboot\learning\demoapp\exceptions\EmailUniquenessException.java
 D:\vscode\demoapp\src\main\java\com\springboot\learning\demoapp\greeting\GreetingController.java
+D:\vscode\demoapp\src\main\java\com\springboot\learning\demoapp\model\AllArgsConstructor.java
+D:\vscode\demoapp\src\main\java\com\springboot\learning\demoapp\model\Data.java
+D:\vscode\demoapp\src\main\java\com\springboot\learning\demoapp\model\NoArgsConstructor.java
 D:\vscode\demoapp\src\main\java\com\springboot\learning\demoapp\model\User.java
 D:\vscode\demoapp\src\main\java\com\springboot\learning\demoapp\payment\BankTransfer.java
 D:\vscode\demoapp\src\main\java\com\springboot\learning\demoapp\payment\CreditCard.java

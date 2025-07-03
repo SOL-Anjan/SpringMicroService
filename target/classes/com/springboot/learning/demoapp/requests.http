@@ -17,6 +17,7 @@ POST http://localhost:8080/api/payments/process
 Content-Type: application/json
 
 {
+  "id": 10004,
   "type": "PayPal",
   "emailAddress": "user@example.com"
 }
@@ -26,6 +27,7 @@ POST http://localhost:8080/users
 Content-Type: application/json
 
 {
+  "id": 10003,
   "name": "Alice",
   "email": "alice@example.com"
 }
@@ -35,6 +37,7 @@ POST http://localhost:8080/users
 Content-Type: application/json
 
 {
+  "id": 10002,
   "name": "Bob",
   "email": "bob@example.com"
 }
